@@ -12,13 +12,13 @@ body, h1, h2, h3, p, ul, li {
      background-repeat: no-repeat;
      background-attachment: fixed;
 }
-/* Overall container to hold everything except the footer */
+
  .page-container {
      display: flex;
      flex-direction: column;
      flex: 1;
 }
-/* Banner Styles */
+
  .banner {
      background-color: #116abd;
      color: #fff;
