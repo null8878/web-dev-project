@@ -172,3 +172,12 @@ body, h1, h2, h3, p, ul, li {
  .breadcrumb a:hover {
      text-decoration: underline;
 }
+.content-wrapper {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+}
+

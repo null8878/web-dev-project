@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Farmers Market",
+    "date": "2025-05-12",
+    "location": "Main Street",
+    "description": "Fresh produce, baked goods, and local crafts."
+  },
+  {
+    "title": "Fortville Music Fest",
+    "date": "2025-05-20",
+    "location": "Broadway Park",
+    "description": "Live music, food trucks, and family fun!"
+  },
+  {
+    "title": "Outdoor Movie Night",
+    "date": "2025-05-25",
+    "location": "Downtown Green",
+    "description": "Bring your blanket and enjoy a free family movie under the stars."
+  }
+]

@@ -65,15 +65,34 @@
                     </article>
                 </section>
 
-                <section id="news-and-events">
-                    <h2>What's Happening</h2>
-                    <ul>
-                        <li><a href="#">Town Council Meeting - July 10th, 7:00 PM</a></li>
-                        <li><a href="#">Summer Concert Series - Every Friday in July</a></li>
-                        <li><a href="#">Fortville Farmers Market - Saturdays until October</a></li>
-                    </ul>
-                    <p><a href="#">View All Events</a></p>
-                </section>
+               <!-- Add this inside <main> of your index.html -->
+
+<section id="upcoming-events">
+  <h2>Upcoming Events in Fortville</h2>
+  <ul id="event-list" style="list-style: none; padding-left: 0;"></ul>
+</section>
+
+<script>
+fetch('events.json')
+  .then(response => response.json())
+  .then(events => {
+    const eventList = document.getElementById('event-list');
+    events.forEach(event => {
+      const li = document.createElement('li');
+      li.style.marginBottom = '20px';
+      li.innerHTML = `
+        <div style="background: #ffffffaa; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+          <h3 style="margin: 0 0 5px 0;">${event.title}</h3>
+          <p style="margin: 0;"><strong>Date:</strong> ${event.date}</p>
+          <p style="margin: 0;"><strong>Location:</strong> ${event.location}</p>
+          <p style="margin-top: 5px;">${event.description}</p>
+        </div>
+      `;
+      eventList.appendChild(li);
+    });
+  });
+</script>
+
 
                 <section id="external-resources">
                     <h3>Useful Links</h3>
